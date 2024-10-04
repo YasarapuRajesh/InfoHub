@@ -35,34 +35,37 @@
 ```bash
 git clone https://github.com/your-username/infohub.git
 cd infohub
+```
 
 ### 3. Set Up the Database
 
-- Import the provided SQL file (if available) into your MySQL database to create the required tables.
-- Update the database connection details (URL, username, password) in the servlet configuration.
+1. Import the provided SQL file (if available) into your MySQL database to create the required tables.
+2. Update the database connection details (URL, username, password) in the servlet configuration.
 
 ### 4. Deploy the Application
 
-- Compile the code using your preferred IDE (e.g., Eclipse or IntelliJ IDEA), ensuring that the servlet API is included in the project’s build path.
-- Deploy to a Servlet Container:
-- If using Apache Tomcat, move the generated WAR file to the webapps directory of Tomcat.
-- Alternatively, you can directly run the application from your IDE if it supports servlet deployment.
-- Access the Application: Open a browser and go to http://localhost:8080/infohub (or the relevant URL where your Tomcat server is running).
+1. **Compile the code** using your preferred IDE (e.g., Eclipse or IntelliJ IDEA), ensuring that the servlet API is included in the project’s build path.
+2. **Deploy to a Servlet Container**:
+   - If using Apache Tomcat, move the generated WAR file to the `webapps` directory of Tomcat.
+   - Alternatively, you can directly run the application from your IDE if it supports servlet deployment.
+   
+3. **Access the Application**:
+   Open a browser and go to `http://localhost:8080/infohub` (or the relevant URL where your Tomcat server is running).
 
 ### 5. Running the Application
 
-**Register:** Sign up by providing your details.
-**Login:** Log in using your credentials.
-**Manage Details:** After login, view, edit, or delete your profile information.
+1. **Register**: Sign up by providing your details.
+2. **Login**: Log in using your credentials.
+3. **Manage Details**: After login, view, edit, or delete your profile information.
 
-### 6. Folder Structure
+## Folder Structure
 
-**src/:** Contains the HTML, CSS, and JavaScript files for the frontend.
-**src/main/java:** Contains the Java files for the J2EE Servlets.
-**build/:** Compiled files for deployment.
-**.settings/:** Configuration files for the project.
+- `src/`: Contains the HTML, CSS, and JavaScript files for the frontend.
+- `src/main/java`: Contains the Java files for the J2EE Servlets.
+- `build/`: Compiled files for deployment.
+- `.settings/`: Configuration files for the project.
 
-### 7. Future Enhancements
+## Future Enhancements
 
 - Add encryption to store passwords securely (e.g., using bcrypt).
 - Implement role-based access controls.
